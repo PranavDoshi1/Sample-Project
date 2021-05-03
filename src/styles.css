@@ -1,0 +1,164 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+ .picky__input span {
+    font-family: "MarsCentra-Book";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* display: none; */
+  }
+  
+   .picky {
+    width: 100%;
+    position: relative;
+   
+    
+  }
+   .picky * {
+    box-sizing: border-box;
+  }
+  
+   .picky__input {
+    width: 9vw;
+    background-color: rgb(228, 228, 228);
+    border: 0;
+    border-width: 1px;
+    /* border-color: #eee; */
+    border-style: solid;
+    /* border-radius: 2px; */
+    /* padding: 5px; */
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    /* height: 38px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    border-color: #b3b3b3;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0vw !important;
+    font-size: 0.9vw !important;
+    height: 2vw !important;
+  }
+  .picky__input:disabled {
+    opacity: 0.2;
+  }
+  .picky_input:disabled + .picky_dropdown .option {
+    opacity: 0.2;
+  }
+   .picky__input::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+    right: 0.5vw;
+    top: 0.9vw;
+  }
+   .picky__dropdown {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+    /* width: 100%; */
+    position: absolute;
+    top: auto !important;
+    left: 45vw !important;
+    z-index: 99 !important;
+    background: white;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  
+    width: 10vw;
+    font-family: "MarsCentra-Book";
+    font-size: 0.8vw; /*    0.8vw;*/
+    overflow-y: hidden;
+    max-height: 15vw !important;
+  }
+   .picky__dropdown .option,
+   .picky__dropdown li {
+    list-style: none;
+    background-color: white;
+    color: #595959;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+    padding: 0.5em;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    z-index: 11 !important;
+  }
+  .picky__dropdown .option:hover,
+  .picky__dropdown li:hover {
+    background-color: #ecf0f1;
+  }
+  .picky__dropdown .option.selected,
+  .picky__dropdown li.selected {
+    background-color: #ecf0f1;
+  }
+  .picky__dropdown .option:focus,
+  .picky__dropdown li:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
+  }
+  .picky__dropdown .option input[type="checkbox"],
+  .picky__dropdown .option input[type="radio"],
+  .picky__dropdown li input[type="checkbox"],
+  .picky__dropdown li input[type="radio"] {
+    margin-right: 3px;
+  }
+  .picky__filter {
+    display: flex;
+    width: 100%;
+    padding: 3px;
+  }
+  .picky_filter_input {
+    width: 100%;
+    padding: 3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    height: 30px;
+  }
+   .picky__placeholder {
+    color: black;
+  }
+  #submit{
+    background: rgb(0,0,160);
+    color: white;
+    width: 7vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+  }
+  #submit-disable{
+      display: none;
+  }
